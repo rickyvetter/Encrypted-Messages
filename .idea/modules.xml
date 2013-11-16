@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/NFC/NFC.iml" filepath="$PROJECT_DIR$/NFC/NFC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NFCProject.iml" filepath="$PROJECT_DIR$/NFCProject.iml" />
+    </modules>
+  </component>
+</project>
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NFC</string>
+    <string name="write_button_message">Broadcast Message</string>
+    <string name="nfc_checkbox">Send to NFC Tags</string>
+    <string name="beam_checkbox">Send via Android Beam</string>
+    <string name="message_hint">Short message</string>
+    <string name="action_settings">settings</string>
+    <string name="title_activity_receive_message">ReceiveMessageActivity</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>
