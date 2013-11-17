@@ -9,5 +9,6 @@
     <string name="action_settings">settings</string>
     <string name="title_activity_receive_message">ReceiveMessageActivity</string>
     <string name="hello_world">Hello world!</string>
+    <string name="secretKey_hint">Secret Key</string>
 
 </resources>

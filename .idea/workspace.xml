@@ -11,7 +11,16 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="accbdf6e-2673-4eae-bd17-9126c49353b2" name="Default" comment="" />
+    <list default="true" id="accbdf6e-2673-4eae-bd17-9126c49353b2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NFC/src/main/java/edu/luc/cs/rvetter/NFC/MainActivity.java" afterPath="$PROJECT_DIR$/NFC/src/main/java/edu/luc/cs/rvetter/NFC/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NFC/build/source/r/debug/edu/luc/cs/rvetter/NFC/R.java" afterPath="$PROJECT_DIR$/NFC/build/source/r/debug/edu/luc/cs/rvetter/NFC/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NFC/build/res/all/debug/layout/activity_main.xml" afterPath="$PROJECT_DIR$/NFC/build/res/all/debug/layout/activity_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NFC/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/NFC/src/main/res/layout/activity_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NFC/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/NFC/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NFC/build/res/all/debug/values/values.xml" afterPath="$PROJECT_DIR$/NFC/build/res/all/debug/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="NFC.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,25 +37,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <method_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$APPLICATION_HOME_DIR$/sdk/sources/android-18/android/app/Activity.java" line="873" class="android.app.Activity" package="android.app">
-        <option name="WATCH_ENTRY" value="true" />
-        <option name="WATCH_EXIT" value="true" />
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </method_breakpoints>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
@@ -84,6 +74,25 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <method_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$APPLICATION_HOME_DIR$/sdk/sources/android-18/android/app/Activity.java" line="873" class="android.app.Activity" package="android.app">
+        <option name="WATCH_ENTRY" value="true" />
+        <option name="WATCH_EXIT" value="true" />
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </method_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -96,7 +105,7 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NFC/src/main/java/edu/luc/cs/rvetter/NFC/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="35" selection-start="3671" selection-end="3671" vertical-scroll-proportion="3.2813141" vertical-offset="391" max-vertical-offset="4267">
+            <state line="230" column="38" selection-start="7750" selection-end="7750" vertical-scroll-proportion="0.28366762" vertical-offset="3712" max-vertical-offset="5695">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -107,7 +116,7 @@
       <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NFC/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="38" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="306">
+            <state line="11" column="44" selection-start="569" selection-end="569" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
               <folding />
             </state>
           </provider>
@@ -115,38 +124,23 @@
       </file>
       <file leaf-file-name="activity_main.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NFC/src/main/res/layout/activity_main.xml">
-          <provider editor-type-id="text-editor">
-            <state line="46" column="43" selection-start="1493" selection-end="1493" vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="969">
-              <folding />
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="25" selection-start="422" selection-end="435" vertical-scroll-proportion="-8.84" vertical-offset="0" max-vertical-offset="1071">
+              <folding>
+                <element signature="e#458#482#0" expanded="true" />
+                <element signature="e#699#721#0" expanded="true" />
+              </folding>
             </state>
           </provider>
-          <provider selected="true" editor-type-id="android-designer">
+          <provider editor-type-id="android-designer">
             <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActivityThread.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-18/android/app/ActivityThread.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2179" column="0" selection-start="90983" selection-end="90983" vertical-scroll-proportion="0.0" vertical-offset="37043" max-vertical-offset="86921">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Handler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-18/android/os/Handler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="724" column="0" selection-start="29009" selection-end="29009" vertical-scroll-proportion="0.0" vertical-offset="12308" max-vertical-offset="13515">
-              <folding />
-            </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="MimeType.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NFC/src/main/java/edu/luc/cs/rvetter/NFC/MimeType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="79" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="238">
+            <state line="7" column="48" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
               <folding />
             </state>
           </provider>
@@ -167,6 +161,14 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="tasksExpandState">
@@ -524,10 +526,10 @@
         <option value="$PROJECT_DIR$/NFC/src/main/java/edu/luc/cs/rvetter/NFC/CardActivity.java" />
         <option value="$PROJECT_DIR$/NFC/src/main/java/edu/luc/cs/rvetter/NFC/ReceiveMessageActivity.java" />
         <option value="$PROJECT_DIR$/NFC/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/NFC/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/NFC/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/NFC/src/main/java/edu/luc/cs/rvetter/NFC/MainActivity.java" />
         <option value="$PROJECT_DIR$/NFC/src/main/java/edu/luc/cs/rvetter/NFC/MimeType.java" />
+        <option value="$PROJECT_DIR$/NFC/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/NFC/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/NFC/src/main/java/edu/luc/cs/rvetter/NFC/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -537,7 +539,7 @@
     <option name="width" value="1616" />
     <option name="height" value="916" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -564,6 +566,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -736,7 +739,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -744,7 +746,7 @@
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="project.propCompiler" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Android NFC/demo/.project" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="015d46d92a1c1601" />
@@ -935,32 +937,32 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="916" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.92464876" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3448276" sideWeight="0.33375" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.075351216" sideWeight="0.33375" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32950193" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3448276" sideWeight="0.66625" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.075351216" sideWeight="0.66625" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.253125" sideWeight="0.6551724" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1425" sideWeight="0.92464876" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32950193" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.6704981" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32950193" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1061,20 +1063,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-18/android/app/ActivityThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2179" column="0" selection-start="90983" selection-end="90983" vertical-scroll-proportion="0.0" vertical-offset="34943" max-vertical-offset="84915">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-18/android/os/Handler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="724" column="0" selection-start="29009" selection-end="29009" vertical-scroll-proportion="0.0" vertical-offset="11875" max-vertical-offset="13226">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NFC/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="4" selection-start="1396" selection-end="1396" vertical-scroll-proportion="0.0" vertical-offset="88" max-vertical-offset="816">
@@ -1084,31 +1072,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/NFC/src/main/java/edu/luc/cs/rvetter/NFC/MimeType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="79" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+        <state line="7" column="48" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-18/android/app/ActivityThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="127" column="47" selection-start="4304" selection-end="4304" vertical-scroll-proportion="0.33333334" vertical-offset="0" max-vertical-offset="84915">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-18/android/os/Handler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="724" column="0" selection-start="29009" selection-end="29009" vertical-scroll-proportion="18.128204" vertical-offset="0" max-vertical-offset="13226">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NFC/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="text-editor">
-        <state line="46" column="43" selection-start="1493" selection-end="1493" vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="969">
-          <folding />
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="25" selection-start="422" selection-end="435" vertical-scroll-proportion="-8.84" vertical-offset="0" max-vertical-offset="1071">
+          <folding>
+            <element signature="e#458#482#0" expanded="true" />
+            <element signature="e#699#721#0" expanded="true" />
+          </folding>
         </state>
       </provider>
-      <provider selected="true" editor-type-id="android-designer">
+      <provider editor-type-id="android-designer">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NFC/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="38" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+        <state line="11" column="44" selection-start="569" selection-end="569" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NFC/src/main/java/edu/luc/cs/rvetter/NFC/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="35" selection-start="3671" selection-end="3671" vertical-scroll-proportion="3.2813141" vertical-offset="391" max-vertical-offset="4267">
+        <state line="230" column="38" selection-start="7750" selection-end="7750" vertical-scroll-proportion="0.28366762" vertical-offset="3712" max-vertical-offset="5695">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

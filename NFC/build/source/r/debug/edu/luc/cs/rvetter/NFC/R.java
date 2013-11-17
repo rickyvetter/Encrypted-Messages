@@ -882,10 +882,10 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f07002f;
         public static final int action_mode_bar_stub=0x7f07002e;
         public static final int action_mode_close_button=0x7f070022;
-        public static final int action_settings=0x7f070047;
+        public static final int action_settings=0x7f070048;
         public static final int activity_chooser_view_content=0x7f070023;
         public static final int always=0x7f07000f;
-        public static final int beamCheckBox=0x7f070045;
+        public static final int beamCheckBox=0x7f070046;
         public static final int beginning=0x7f07000a;
         public static final int checkbox=0x7f07002b;
         public static final int collapseActionView=0x7f070011;
@@ -905,10 +905,10 @@ containing a value of this type.
         public static final int left_icon=0x7f070031;
         public static final int listMode=0x7f070001;
         public static final int list_item=0x7f070027;
-        public static final int messageText=0x7f070042;
+        public static final int messageText=0x7f070043;
         public static final int middle=0x7f07000b;
         public static final int never=0x7f07000d;
-        public static final int nfcCheckBox=0x7f070046;
+        public static final int nfcCheckBox=0x7f070047;
         public static final int none=0x7f070009;
         public static final int normal=0x7f070000;
         public static final int progress_circular=0x7f070034;
@@ -926,6 +926,7 @@ containing a value of this type.
         public static final int search_plate=0x7f07003c;
         public static final int search_src_text=0x7f07003d;
         public static final int search_voice_btn=0x7f070041;
+        public static final int secretKeyText=0x7f070042;
         public static final int shortcut=0x7f07002c;
         public static final int showCustom=0x7f070007;
         public static final int showHome=0x7f070004;
@@ -933,14 +934,14 @@ containing a value of this type.
         public static final int split_action_bar=0x7f07001c;
         public static final int submit_area=0x7f07003f;
         public static final int tabMode=0x7f070002;
-        public static final int text_view=0x7f070044;
+        public static final int text_view=0x7f070045;
         public static final int title=0x7f070029;
         public static final int title_container=0x7f070030;
         public static final int top_action_bar=0x7f07001e;
         public static final int up=0x7f07001f;
         public static final int useLogo=0x7f070003;
         public static final int withText=0x7f070010;
-        public static final int write_button=0x7f070043;
+        public static final int write_button=0x7f070044;
     }
     public static final class integer {
         /**  From: file:/C:/Users/Ricky/AndroidStudioProjects/NFCProject/NFC/build/exploded-bundles/ComAndroidSupportAppcompatV71800.aar/res/values-w360dp/values.xml 
@@ -1003,8 +1004,9 @@ containing a value of this type.
         public static final int hello_world=0x7f0a0010;
         public static final int message_hint=0x7f0a0011;
         public static final int nfc_checkbox=0x7f0a0012;
-        public static final int title_activity_receive_message=0x7f0a0013;
-        public static final int write_button_message=0x7f0a0014;
+        public static final int secretKey_hint=0x7f0a0013;
+        public static final int title_activity_receive_message=0x7f0a0014;
+        public static final int write_button_message=0x7f0a0015;
     }
     public static final class style {
         /**  From: file:/C:/Users/Ricky/AndroidStudioProjects/NFCProject/NFC/src/main/res/values/styles.xml 

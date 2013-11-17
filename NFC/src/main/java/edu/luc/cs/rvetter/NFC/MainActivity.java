@@ -25,6 +25,11 @@ import android.widget.Toast;
 import java.io.IOException;
 import java.nio.charset.Charset;
 
+import java.security.*;
+import javax.crypto.*;
+import javax.crypto.spec.*;
+import javax.crypto.interfaces.*;
+
 public class MainActivity extends Activity implements View.OnClickListener {
     // True = ready to write to devices
     private boolean inWriteMode;
@@ -32,6 +37,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private Button writeButton;
     // Text that displays all messages
     private TextView interactionText;
+
+
+    private EditText secretKeyText;
+    //String secretDecryptionKey = "1234567812345678";
 
     // Connects to NFC devices
     private NfcAdapter nfcAdapter;
@@ -52,6 +61,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         //TextView that we'll use to output messages to screen
         interactionText = (TextView)findViewById(R.id.text_view);
+        secretKeyText = (EditText) findViewById(R.id.secretKeyText);
 
         Intent intent = getIntent();
         if(intent.getType() != null && intent.getType().equals(MimeType.NFC_MIME)) {
@@ -75,11 +85,36 @@ public class MainActivity extends Activity implements View.OnClickListener {
         {
                 NdefMessage msg = (NdefMessage) rawMsgs[rawMsgs.length-1];
                 NdefRecord cardRecord = msg.getRecords()[0];
-                String messageRead = new String(cardRecord.getPayload());
-                Toast.makeText(getApplicationContext(), messageRead, Toast.LENGTH_LONG).show();
-                displayMessage("The message on this card says:\n" + messageRead);
+                //String messageRead = new String(cardRecord.getPayload());
+                try {
+                    String secretKey = secretKeyText.getText().toString();
+                    // decrypt the array
+                    byte[] decryptedMessage = decryptMessage(secretKey, cardRecord.getPayload());
+                    // set the text view for the decrypted message
+                    String temp = new String(decryptedMessage);
+                    //Toast.makeText(getApplicationContext(), temp), Toast.LENGTH_LONG).show();
+                    displayMessage("The message on this card says:\n" + temp);
+
+                } catch (Exception e) {
+                    displayMessage("Message cannot be decrypted! Incorrect key or corrupted message error");
+                }
         }
     }
+
+    public static byte[] decryptMessage(String secretKeyString, byte[] encryptedMsg) throws  Exception {
+        // generate AES secret key from the user input string
+        Key key = generateKey(secretKeyString);
+        // get the cipher algorithm for AES
+        Cipher c = Cipher.getInstance("AES");
+        // specify the decryption mode
+        c.init(Cipher.DECRYPT_MODE, key);
+        // decrypt the message
+        byte[] decryptValue = c.doFinal(encryptedMsg);
+
+        return decryptValue;
+    }
+
+
 
     public void onClick(View v) {
         if(v.getId() == R.id.write_button) {
@@ -141,10 +176,14 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     private void createMessage()
     {
+        String secretKey = secretKeyText.getText().toString();
+        byte[] encryptedMessage = encryptMessage(secretKey, getMessageText());
+        String finalMessage = byte2hex(encryptedMessage);
+
         // record to launch Play Store if app is not installed
         NdefRecord appRecord = NdefRecord.createApplicationRecord("edu.luc.cs.rvetter.NFC");
         // record that contains custom text data, using custom MIME_TYPE
-        byte[] payload = getMessageText().getBytes();
+        byte[] payload = encryptedMessage;
         byte[] mimeBytes = MimeType.NFC_MIME.getBytes(Charset.forName("US-ASCII"));
         NdefRecord messageRecord = new NdefRecord(NdefRecord.TNF_MIME_MEDIA, mimeBytes,
                 new byte[0], payload);
@@ -152,6 +191,51 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         // Check permissions to enable correct sending technologies
         checkPermissions(potentialNdefMessage);
+    }
+
+
+    public static String byte2hex(byte[] b) {
+        String hs = "";
+        String stmp = "";
+        for(int i = 0; i <b.length; i++) {
+            stmp = Integer.toHexString(b[i] & 0xFF);
+            if (stmp.length() == 1) {
+                hs += ("0" + stmp);
+            }
+            else {
+                hs += stmp;
+            }
+        }
+        return hs.toUpperCase();
+    }
+
+    public static byte[] encryptMessage(String secretKeyString, String msgContentString) {
+        try {
+            byte[] returnArray;
+
+            // generate AES secret key from user input
+            Key key = generateKey(secretKeyString);
+
+            // specify the cipher algorithm using AES
+            Cipher c = Cipher.getInstance("AES");
+
+            // specify encryption mode
+            c.init(Cipher.ENCRYPT_MODE, key);
+
+            // encrypt
+            returnArray = c.doFinal(msgContentString.getBytes());
+
+            return returnArray;
+        } catch (Exception e) {
+            e.printStackTrace();
+            byte[] returnArray = null;
+            return returnArray;
+        }
+    }
+    private static Key generateKey(String secretKeyString) throws Exception {
+        // generate secret key from string
+        Key key = new SecretKeySpec(secretKeyString.getBytes(), "AES");
+        return key;
     }
 
     private void checkPermissions(NdefMessage potentialNdefMessage)

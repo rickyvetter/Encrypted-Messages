@@ -510,6 +510,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="message_hint">Short message</string>
     <string name="nfc_checkbox">Send to NFC Tags</string>
+    <string name="secretKey_hint">Secret Key</string>
     <string name="title_activity_receive_message">ReceiveMessageActivity</string>
     <string name="write_button_message">Broadcast Message</string>
     <!-- From: file:/C:/Users/Ricky/AndroidStudioProjects/NFCProject/NFC/src/main/res/values/styles.xml -->
